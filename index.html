@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIE v5.3 - Compresor Genómico (Parseo Corregido)</title>
+    <title>TIE v5.3 - Compresor Genómico </title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
     <style>
         /* [CSS sin cambios] */
@@ -35,8 +35,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>TIE v5.3 - Compresor Genómico (Parseo Corregido)</h1>
-        <p class="subtitle">Implementación Final con Regresión Lineal y Parseo FASTA Robusto</p>
+        <h1>TIE v5.3 - Compresor Genómico </h1>
+        <p class="subtitle">Implementación con Regresión Lineal y Parseo FASTA Robusto</p>
         <!-- [UI HTML sin cambios] -->
         <div class="tabs"><div class="tab active" data-tab="compress">Compresión</div><div class="tab" data-tab="decompress">Descompresión</div></div>
         <div id="compressContent" class="tab-content active"><div class="upload-section"><div class="file-drop" id="compressDropZone"><p>Arrastra archivo genómico (.fasta, .fa, .txt)</p><input type="file" id="compressFileInput" accept=".fasta,.fa,.txt" style="display:none;"></div><div id="compressFileInfo"></div><button class="btn" id="compressBtn" disabled>Comprimir con TIE v5.3</button></div><div class="results" id="compressResults" style="display: none;"><h2>Resultados de la Compresión TIE</h2><div class="stats"><div class="stat"><h3>Tamaño Original</h3><div class="stat-value" id="originalSize">0 B</div></div><div class="stat"><h3>Tamaño Comprimido</h3><div class="stat-value" id="compressedSize">0 B</div></div><div class="stat"><h3>Ratio de Compresión</h3><div class="stat-value" id="compressionRatio">0:1</div></div><div class="stat"><h3>Espacio Ahorrado</h3><div class="stat-value" id="savings">0%</div></div></div><h3>Proceso de Compresión (Log)</h3><div class="code" id="procesoInfo"></div><h3>Estructura del Archivo .TIE5</h3><div class="code" id="structureInfo"></div><button class="btn" id="downloadCompressedBtn">Descargar archivo .TIE5</button></div></div>
